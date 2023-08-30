@@ -5,56 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRM - IndexedDB</title>
-    <link rel="stylesheet" href="css/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-100 bg-gray-200">
+<body class="min-h-100">
     <div class="md:flex min-h-screen md:align-top">
-        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-lime-700 px-5 py-10">
             <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">CRM - IndexedDB</h1>
             <p class="mt-10 text-white">Administra tus Clientes con el CRM - IndexedDB</p>
             <nav class="mt-8">
                 <a href="/"
-                    class="px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400 bg-teal-700">Clientes</a>
+                    class="px-3 py-1 text-lime-600 font-bold block hover:bg-lime-600 mt-2 hover:text-lime-300 bg-lime-300 rounded-sm">Clientes</a>
                 <a href="nuevo-cliente.html"
-                    class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400">Nuevo Cliente</a>
+                    class="px-3 py-1 text-lime-300 font-bold block hover:bg-lime-600 mt-2 hover:text-lime-400 rounded-sm">Nuevo
+                    Cliente</a>
             </nav>
         </aside> <!--sidebar-->
-        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-lime-950">
 
-
-
-
-            <h2 class="text-3xl font-light text-center">Clientes</h2>
-
-            <p class="text-center text-gray-600 mt-10">No hay Clientes</p>
+            <h2 class="text-3xl font-bold text-lime-300 text-center">Clientes</h2>
 
             <div class="flex flex-col mt-10">
                 <div class="py-2 overflow-x-auto">
-                    <div
-                        class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                    <div class="align-middle inline-block min-w-full overflow-hidden sm:rounded-lg">
                         <table class="min-w-full">
-                            <thead class="bg-gray-100 ">
+                            <thead class="bg-lime-200">
                                 <tr>
                                     <th
-                                        class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        class="px-6 py-3  text-left text-xs leading-4 font-medium text-lime-600 uppercase tracking-wider">
                                         Nombre Cliente
                                     </th>
                                     <th
-                                        class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        class="px-6 py-3  text-left text-xs leading-4 font-medium text-lime-600 uppercase tracking-wider">
                                         Teléfono
                                     </th>
                                     <th
-                                        class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        class="px-6 py-3  text-left text-xs leading-4 font-medium text-lime-600 uppercase tracking-wider">
                                         Empresa
                                     </th>
                                     <th
-                                        class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                                        class="px-6 py-3  text-left text-xs leading-4 font-medium text-lime-600 uppercase tracking-wider">
                                         Acciones
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody id="listado-clientes" class="bg-white"></tbody>
+                            <tbody id="listado-clientes" class="bg-lime-700"></tbody>
                         </table>
                     </div>
                 </div>
